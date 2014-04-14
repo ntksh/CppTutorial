@@ -15,6 +15,11 @@ void test_new() {
 		*p = 0;
 		delete p;
 	}
+
+	int size = 100;
+	int* arr = new int[size];
+
+	delete[] arr;
 }
 
 
