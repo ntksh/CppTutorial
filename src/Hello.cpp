@@ -7,9 +7,7 @@
 
 #include "overload.h"
 #include "booleanfunc.h"
-
-#include <iostream>
-#include <assert.h>
+#include "common.h"
 
 using namespace std;
 
