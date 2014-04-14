@@ -18,7 +18,7 @@ void size_of_type();
 void show_char_code();
 void show_string();
 
-int main() {
+int mainorg() {
 	cout << "Hello, world!" << endl;
 
 	int a;
