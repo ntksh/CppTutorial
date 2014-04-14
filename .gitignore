@@ -2,4 +2,6 @@
 .project
 .settings
 Debug
+gtest
+libgtest.a
 
