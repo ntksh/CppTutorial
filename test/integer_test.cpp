@@ -13,5 +13,10 @@ TEST(IntegerTest, init_value_is_zero) {
 	EXPECT_EQ(0, sut.m_value);
 }
 
+TEST(IntegerTest, set_init_value_when_create) {
+	Integer sut(123);
+
+	EXPECT_EQ(123, sut.m_value);
+}
 
 
