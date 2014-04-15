@@ -19,4 +19,12 @@ TEST(IntegerTest, set_init_value_when_create) {
 	EXPECT_EQ(123, sut.m_value);
 }
 
+TEST(IntegerTest, copy_array) {
+	IntArray a(10);
+	IntArray sut(a);
+
+	EXPECT_EQ(a.Get(0), sut.Get(0));
+	sut.Set(0, 9999);
+	EXPECT_NE(a.Get(0), sut.Get(0));
+}
 

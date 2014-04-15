@@ -23,6 +23,8 @@ public:
 	IntArray(int num);
 	// destructor
 	~IntArray();
+	// copy constructor
+	IntArray(const IntArray& other);
 
 public:
 	// method

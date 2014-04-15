@@ -8,6 +8,8 @@
 #include "integer.h"
 #include <cstdlib>
 #include <algorithm>
+using namespace std;
+
 
 // constructor
 Integer::Integer() {
@@ -26,6 +28,13 @@ IntArray::IntArray(int size) {
 // destructor
 IntArray::~IntArray() {
 	delete [] m_array;
+}
+
+IntArray::IntArray(const IntArray& other) {
+	m_array = new int[other.m_size];
+	m_size = other.m_size;
+
+	copy(other.m_array, other.m_array + m_size, m_array);
 }
 
 int IntArray::Get(int i) {
