@@ -5,13 +5,7 @@
  *      Author: nash
  */
 
-class Integer {
-public:
-	int m_value;
-
-	Integer();
-
-};
+#include "integer.h"
 
 // constructor
 Integer::Integer() {
