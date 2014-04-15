@@ -30,7 +30,10 @@ public:
 	// method
 	int Get(int i);
 	void Set(int i, int value);
-	int Size();
+	int Size() const;
+	// operator overloading
+	void operator=(const IntArray& other);
+
 
 private:
 	void CheckIndex(int i);

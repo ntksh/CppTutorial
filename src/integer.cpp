@@ -47,8 +47,17 @@ void IntArray::Set(int i, int value) {
 	m_array[i] = value;
 }
 
-int IntArray::Size() {
+int IntArray::Size() const {
 	return m_size;
+}
+
+void IntArray::operator =(const IntArray& other) {
+	int* array = new int[other.m_size];
+
+	delete [] m_array;
+	m_array = array;
+	m_size = other.m_size;
+	copy(other.m_array, other.m_array + m_size, m_array);
 }
 
 void IntArray::CheckIndex(int i) {
