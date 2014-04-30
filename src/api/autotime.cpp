@@ -2,7 +2,7 @@
  * autotime.cpp
  *
  *  Created on: 2014/04/30
- *      Author: takeshi-nakamoto
+ *      Author: nash
  */
 #include <autotime.h>
 #include <iostream>

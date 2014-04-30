@@ -2,7 +2,7 @@
  * test_main.cpp
  *
  *  Created on: 2014/04/14
- *      Author: takeshi-nakamoto
+ *      Author: nash
  */
 #include "gtest/gtest.h"
 
