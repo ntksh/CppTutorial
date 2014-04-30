@@ -11,6 +11,7 @@
 #include <string>
 class AutoTimer {
 public:
+	// protection against implicit conversations
 	explicit AutoTimer(const std::string &name);
 	~AutoTimer();
 
